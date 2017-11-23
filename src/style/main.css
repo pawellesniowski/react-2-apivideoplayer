@@ -1,0 +1,56 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.row {
+    width: 100%
+}
+.col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 16.666%;
+}
+.col-10{
+    width: 83.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.searchBar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+
+}
+
+.logo{
+    width: 100%;
+    padding-right: 10px;
+}
+.input{
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.5rem;
+}
