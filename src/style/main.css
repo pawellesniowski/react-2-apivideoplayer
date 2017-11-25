@@ -2,10 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
 }
 
+.container {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
 
 .row {
     width: 100%
@@ -21,15 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.container {
-    margin: auto;
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    align-self: center;
 }
 
 .searchBar {
