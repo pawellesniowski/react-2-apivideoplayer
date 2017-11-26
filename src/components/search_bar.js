@@ -14,11 +14,13 @@ class searchBar extends Component {
     }
 
     onInputChange(event){
-        this.setState({term: event.target.value})
-        console.log(this.state);
+        this.setState({term: event.target.value});
+        this.props.onSearchTermChange(event.target.value);
     }
 
-    render(){
+    
+
+    render(){      
         return (
                 <div className="searchBar row">
                     <div className="col-2">

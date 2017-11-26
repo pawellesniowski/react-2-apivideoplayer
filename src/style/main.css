@@ -1,6 +1,6 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Anton');
 
+@import url('https://fonts.googleapis.com/css?family=Anton');
 * {
     margin: 0;
     padding: 0;
@@ -8,29 +8,18 @@
     font-family: 'Anton', sans-serif;
 }
 
-.container {
-    margin: auto;
-    max-width: 800px;
+.row {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    flex-wrap: wrap;
 }
 
-.row {
-    width: 100%
+.col-2 {
+    width: 16.666%;
 }
-.col-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 16.666%;
-}
-.col-10{
+
+.col-10 {
     width: 83.333%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .searchBar {
@@ -40,18 +29,32 @@
     justify-content: center;
     align-self: center;
     height: 100px;
-
 }
 
-.logo{
+.logo {
     width: 100%;
     padding-right: 10px;
 }
-.input{
-    width: 100%;
-}
 
 input {
+    width: 100%;
     padding: 10px;
     font-size: 1.5rem;
+}
+
+
+/* video list */
+.videoDetail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.video-detail-player{
+    width: 100%;
+    height: 60%
+}
+
+li {
+    cursor: pointer;
 }

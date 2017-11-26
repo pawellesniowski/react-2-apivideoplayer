@@ -1,18 +1,28 @@
 import React from 'react';
 import VideoListItem from './video_list_item';
 
-const VideoList = props => {
+// in props we have onVideoSelect, which comes from App.js, we passed it in <VideoList onVideoSelected={selectedVideo=>this.setState({selectedVidoe})}>
+
+const VideoList = (props) => {
 
     const videoItems = props.videos.map(video=>{
-        return <VideoListItem video={video} key={video.etag}/>
+        return (
+            <VideoListItem 
+                video={video} 
+                key={video.etag}
+                onVideoSelect={props.onVideoSelect}
+            />
+        );
     });
 
     return(
-        <ul>
-            {videoItems}            
-        </ul>
+        <div className="col-2">
+            <ul>
+                {videoItems}            
+            </ul>
+        </div>
+    );
 
-    )
 }
 
 export default VideoList;
